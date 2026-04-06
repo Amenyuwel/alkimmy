@@ -6,11 +6,12 @@ RUN corepack enable
 WORKDIR /usr/src/app
 
 COPY pnpm-lock.yaml package.json ./
-RUN pnpm install
 
-COPY . .
+RUN pnpm install --frozen-lockfile
 
 FROM base AS build
+
+COPY . .
 RUN pnpm run build
 
 FROM nginx:alpine AS production
