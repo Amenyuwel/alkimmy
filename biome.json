@@ -18,6 +18,15 @@
 		"enabled": true,
 		"rules": {
 			"recommended": true,
+			"nursery": {
+				"useSortedClasses": {
+					"level": "error",
+					"options": {
+						"functions": ["clsx", "cva", "tw"],
+						"attributes": ["classList"]
+					}
+				}
+			},
 			"a11y": {
 				"noDistractingElements": "error",
 				"useAltText": "error",

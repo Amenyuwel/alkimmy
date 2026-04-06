@@ -7,8 +7,8 @@ const config: Config = {
     extend: {
       colors: {
         body: "var(--text)",
-        heading: "var(--text-h)",
         background: "var(--bg)",
+        backgroundImage: "var(--background-image)",
         accent: "var(--accent)",
         border: "var(--border)",
       },

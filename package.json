@@ -9,7 +9,7 @@
 		"lint": "eslint .",
 		"preview": "vite preview",
 		"lint-format": "biome check",
-		"lint-format:fix": "biome check --write"
+		"lint-format:fix": "biome check --write --unsafe"
 	},
 	"dependencies": {
 		"@heroicons/react": "^2.2.0",

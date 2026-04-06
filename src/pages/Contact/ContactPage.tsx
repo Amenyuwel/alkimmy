@@ -3,7 +3,7 @@ export default function ContactPage() {
 		<div className="flex h-screen w-full flex-col bg-background text-body transition-colors duration-300 ease-in-out">
 			<main className="flex flex-1 flex-col items-center justify-center px-6 text-center">
 				<section className="max-w-3xl space-y-8">
-					<h1 className="font-heading text-5xl font-medium tracking-tighter text-heading md:text-7xl">
+					<h1 className="font-heading font-medium text-5xl text-heading tracking-tighter md:text-7xl">
 						Contact Us
 					</h1>
 					<p className="mx-auto max-w-lg font-sans text-lg leading-relaxed opacity-90 md:text-xl">
