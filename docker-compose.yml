@@ -1,0 +1,26 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: base
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - "3000:3000"
+    environment:
+      - VITE_PORT=3000
+      - CHOKIDAR_USEPOLLING=true 
+    command: pnpm dev --host 0.0.0.0
+
+  lint:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: base
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    restart: "no"
+    command: pnpm lint-format:fix
