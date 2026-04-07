@@ -8,14 +8,12 @@ const config: Config = {
       colors: {
         body: "var(--text)",
         background: "var(--bg)",
-        backgroundImage: "var(--background-image)",
         accent: "var(--accent)",
         border: "var(--border)",
       },
       fontFamily: {
-        sans: ["var(--sans)", "sans-serif"],
-        heading: ["var(--heading)", "serif"],
-        mono: ["var(--mono)", "monospace"],
+        sans: ["Lato", "sans-serif"],
+        heading: ["Playfair Display", "serif"],
       },
       lineHeight: {
         relaxed: "1.45",

@@ -8,9 +8,10 @@
 	--orb-1: #e0f2fe;
 	--orb-2: #fee2e2;
 	--orb-3: #fae8ff;
+	--orb-3-accent: #1a1a1a;
 
-	--sans: "Lato", sans-serif;
-	--heading: "Playfair Display", serif;
+	--sans: "Lato";
+	--heading: "Playfair Display";
 	--mono: ui-monospace, Consolas, monospace;
 
 	font-size: 18px;
@@ -31,6 +32,19 @@
 	--orb-1: #1e1b4b;
 	--orb-2: #312e81;
 	--orb-3: #111827;
+	--orb-3-accent: #e0f2fe;
+}
+
+.gradient-text {
+  background: linear-gradient(
+    180deg,
+    #4f46e5,
+    #3b82f6,
+    #06b6d4
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* Add this to your index.css */
@@ -121,18 +135,29 @@ body {
 		color 0.3s ease;
 }
 
-h1,
-h2 {
-	font-family: var(--heading);
-	font-weight: 500;
-	color: var(--text);
-}
 
 h1 {
 	font-size: 3.5rem;
 	line-height: 1.1;
 	margin: 2rem 0;
+	font-family: var(--heading);
 }
+
+h2 {
+	font-size: 2.5rem;
+	line-height: 1.2;
+	margin: 1.5rem 0;
+	font-family: var(--heading);
+}
+
+h3 {
+	font-size: 1.5rem;
+	line-height: 1.3;
+	margin: 1.25rem 0;
+	font-family: var(--heading);
+}
+
+
 
 @media (max-width: 1024px) {
 	:root {
