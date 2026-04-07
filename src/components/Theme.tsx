@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useTheme } from "../store/useTheme";
+import { useTheme } from "#/store/useTheme.ts";
 
 export default function Theme() {
 	const isDarkMode = useTheme((state) => state.isDarkMode);

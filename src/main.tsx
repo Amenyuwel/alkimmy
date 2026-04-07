@@ -1,12 +1,13 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
-import { Footer } from "./components/Footer";
-import Header from "./components/Header";
-import Theme from "./components/Theme";
-import AboutPage from "./pages/About/AboutPage";
-import ContactPage from "./pages/Contact/ContactPage";
-import LandingPage from "./pages/Landing/LandingPage";
+import "#/index.css";
+import { Footer } from "#/components/Footer.tsx";
+import Header from "#/components/Header.tsx";
+import Theme from "#/components/Theme.tsx";
+import AboutPage from "#/pages/About/AboutPage.tsx";
+import ContactPage from "#/pages/Contact/ContactPage.tsx";
+import LandingPage from "#/pages/Landing/LandingPage.tsx";
+import ProductPage from "#/pages/Product/ProductPage.tsx";
 
 const rootElement = document.getElementById("root");
 
@@ -33,6 +34,7 @@ createRoot(rootElement).render(
 			<Header />
 			<LandingPage />
 			<AboutPage />
+			<ProductPage />
 			<ContactPage />
 			<Footer />
 		</main>
