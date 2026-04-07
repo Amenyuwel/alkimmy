@@ -1,6 +1,6 @@
 import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 import { useEffect, useState } from "react";
-import { useTheme } from "../store/useTheme";
+import { useTheme } from "#/store/useTheme.ts";
 
 export default function Header() {
     const isDarkMode = useTheme((state) => state.isDarkMode);

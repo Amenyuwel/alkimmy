@@ -1,0 +1,14 @@
+{
+  "hero": {
+    "heading": {
+      "start": "Elevate Your Nails",
+      "end": "Elevate Your",
+      "highlight": "Style"
+    },
+    "description": "Transform your nails with expertly crafted polishes that blend vibrant colors and nourishing care. Discover the perfect shade to express your unique style and make every manicure a masterpiece.",
+    "buttons": [
+      { "label": "Explore Products", "variant": "primary" },
+      { "label": "Learn More", "variant": "secondary" }
+    ]
+  }
+}

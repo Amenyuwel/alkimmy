@@ -3,7 +3,11 @@
 :root {
 	--text: #1a1a1a;
 	--bg: #ffffff;
-	--border: rgba(255, 255, 255, 0.5);
+
+	--border: rgba(0, 0, 0, 0.08);
+	--border-strong: rgba(0, 0, 0, 0.15);
+	--glass-bg: rgba(255, 255, 255, 0.45);
+	--glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
 
 	--orb-1: #e0f2fe;
 	--orb-2: #fee2e2;
@@ -11,7 +15,7 @@
 	--orb-3-accent: #1a1a1a;
 
 	--sans: "Lato";
-	--heading: "Playfair Display";
+	--heading: "Playfair Display"; 
 	--mono: ui-monospace, Consolas, monospace;
 
 	font-size: 18px;
@@ -29,10 +33,32 @@
 .dark {
 	--text: #ebebeb;
 	--bg: #0a0a0a;
+
+	--border: rgba(255, 255, 255, 0.12);
+	--border-strong: rgba(255, 255, 255, 0.22);
+	--glass-bg: rgba(255, 255, 255, 0.06);
+	--glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+
 	--orb-1: #1e1b4b;
 	--orb-2: #312e81;
 	--orb-3: #111827;
 	--orb-3-accent: #e0f2fe;
+}
+
+.glass-card {
+	background: var(--glass-bg);
+	backdrop-filter: blur(16px);
+	-webkit-backdrop-filter: blur(16px);
+	border: 1px solid var(--border);
+	box-shadow: var(--glass-shadow);
+}
+
+.glass-card-strong {
+	background: var(--glass-bg);
+	backdrop-filter: blur(16px);
+	-webkit-backdrop-filter: blur(16px);
+	border: 1px solid var(--border-strong);
+	box-shadow: var(--glass-shadow);
 }
 
 .gradient-text {
@@ -47,15 +73,12 @@
   background-clip: text;
 }
 
-/* Add this to your index.css */
 header button {
-	/* Ensures the icon color change is as smooth as the header transition */
 	transition:
 		background-color 0.5s ease,
 		transform 0.3s ease;
 }
 
-/* Optional: Add a subtle 'rim' light to the header when scrolled in Light Mode */
 .is-scrolled-light {
 	box-shadow:
 		inset 0 1px 1px rgba(255, 255, 255, 0.8),
@@ -84,7 +107,6 @@ header button {
 	animation: float 20s ease-in-out infinite;
 }
 
-/* Dark mode blend adjustment */
 .dark .orb {
 	mix-blend-mode: screen;
 	opacity: 0.4;
@@ -126,15 +148,12 @@ header button {
 	}
 }
 
-/* --- Standard Styles --- */
-
 body {
 	margin: 0;
 	transition:
 		background-color 0.3s ease,
 		color 0.3s ease;
 }
-
 
 h1 {
 	font-size: 3.5rem;
@@ -156,8 +175,6 @@ h3 {
 	margin: 1.25rem 0;
 	font-family: var(--heading);
 }
-
-
 
 @media (max-width: 1024px) {
 	:root {

@@ -61,7 +61,12 @@
 	"javascript": {
 		"formatter": {
 			"quoteStyle": "double",
-			"trailingCommas": "all"
+			"jsxQuoteStyle": "single",
+			"trailingCommas": "all",
+			"semicolons": "always",
+			"arrowParentheses": "always",
+			"bracketSpacing": true,
+			"bracketSameLine": false
 		}
 	},
 	"assist": {

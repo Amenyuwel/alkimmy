@@ -1,0 +1,23 @@
+{
+  "hero": {
+    "title": "About Us",
+    "description": "We are a team dedicated to building beautiful, functional web experiences."
+  },
+  "cards": [
+    {
+      "image": "Golden",
+      "title": "Golden Harvest",
+      "sub": "Premium organic texture"
+    },
+    {
+      "image": "Pink",
+      "title": "Pink Blush",
+      "sub": "Soft aesthetic finish"
+    },
+    {
+      "image": "Golden",
+      "title": "Limited Edition",
+      "sub": "Crafted for excellence"
+    }
+  ]
+}

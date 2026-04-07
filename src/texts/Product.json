@@ -1,0 +1,62 @@
+{
+  "services": [
+    {
+      "id": "gel_manicure",
+      "name": "Gel Manicure",
+      "products": [
+        {
+          "id": "plain",
+          "name": "Plain",
+          "price": 120
+        },
+        {
+          "id": "minimal_design",
+          "name": "Minimal Design",
+          "price": 180
+        },
+        {
+          "id": "full_set",
+          "name": "Full Set",
+          "price_range": [230, 300]
+        }
+      ]
+    },
+    {
+      "id": "soft_gel_extensions",
+      "name": "Soft Gel Nail Extensions",
+      "products": [
+        {
+          "id": "plain",
+          "name": "Plain",
+          "price": 290
+        },
+        {
+          "id": "minimal_design",
+          "name": "Minimal Design",
+          "price": 340
+        },
+        {
+          "id": "full_set",
+          "name": "Full Set",
+          "price_range": [390, 450]
+        }
+      ]
+    },
+    {
+      "id": "removal",
+      "name": "Removal",
+      "products": [
+        {
+          "id": "my_work",
+          "name": "My Work",
+          "price": 90
+        },
+        {
+          "id": "not_my_work",
+          "name": "Not My Work",
+          "price": 100
+        }
+      ]
+    }
+  ]
+}
